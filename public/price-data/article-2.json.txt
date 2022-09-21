@@ -1,0 +1,5 @@
+{
+    "ArticleNumber": "848483",
+    "UvpPrice": 2.99,
+    "Price": 3.49
+}
