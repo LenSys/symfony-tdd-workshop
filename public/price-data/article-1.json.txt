@@ -1,5 +1,0 @@
-{
-    "ArticleNumber": "12303",
-    "UvpPrice": 10.99,
-    "Price": 12.99
-}
