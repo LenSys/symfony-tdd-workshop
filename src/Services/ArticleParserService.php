@@ -17,17 +17,20 @@ class ArticleParserService implements ArticleParserServiceInterface
     {
         $this->serializer = $serializer;
     }
-
-        
-        
+     
+    
     /**
      * Parses the json data.
      *
      * @param  mixed $jsonData The json data representing an article
      * @return Article The parsed article
      */
-    function parseJsonData(string $jsonData): Article
+    function parseJsonData(string $jsonData): Article|bool
     {
+        if(empty($jsonData)) {
+            return false;
+        }
+
         $article = $this->serializer->deserialize($jsonData, Article::class, 'json');
 
         return $article;
